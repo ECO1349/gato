@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "NeueHaasUnicaPro-Regular",sans-serif;
+  }
+
+body{
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background-image: url("https://img.freepik.com/premium-vector/paper-line_77417-515.jpg");
+  background-size: cover;
+  }
+
+.selection{
+    padding: 50px 100px;
+    background: whitesmoke;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.selection h3{
+    font-size: 3rem;
+    color: #0b2443;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+.selection p{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #0850c7;
+    font-variant: small-caps;
+}
+
+.selection .players{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.selection .players .player{
+    color: #0b2443;
+    border: 2px solid #0b2443;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 0 4px;
+    width: 6rem;
+    height: 4rem;
+    transition: .4s ease;
+
+}
+.selection .players .player:hover{
+    color: whitesmoke;
+    background-color: #0b2443;
+}
+
+.fadeOut{
+    animation: hide .3s linear alternate;
+}
+
+@keyframes hide {
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.fadeIn{
+    animation: show .3s linear alternate;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.play-board{
+    display: none;
+    padding: 50px;
+    border-radius: 8px;
+    background: whitesmoke;
+    text-align: center;
+
+}
+
+table td{
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    background: #0b2343;
+    cursor: pointer;
+    transition: .4s linear;
+    text-align: center;
+}
+
+.reset{
+    cursor: pointer;
+    padding: 8px 18px;
+    margin-top: 30px;
+    color: #0b2443;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 3px solid #0b2443;
+    transition: .4s;
+}
+
+.reset:hover{
+    color: whitesmoke;
+    background: #0b2443;
+}
+
+.winner{
+    display: none;
+    padding: 40px 50px;
+    border-radius: 8px;
+    background: whitesmoke;
+    text-align: center;
+
+}
+
+.winner h3{
+    font-size: 30px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
